@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import {Scene} from './Model'
+import {Model1} from './Model1'
 import { Suspense } from "react";
 import { OrbitControls,Html } from '@react-three/drei'
 
@@ -56,7 +57,7 @@ export default function App() {
       {/*<Box position={[-1.2, 0, 0]} />*/}
       {/*<Box position={[1.2, 0, 0]} />*/}
       <Suspense fallback={<Loader />}>
-      <Scene play={changePlay}  ifPlay={startPlay}/>
+      <Model1 />
       </Suspense>
     </Canvas>
   )
